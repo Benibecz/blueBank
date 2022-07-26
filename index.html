@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Blue Bank</title>
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <section class="login__section">
+      <div class="top__logo__container">
+        <img class="logo__icon" src="icon.png" alt="profile pic" />
+        <h1 class="logo__text">Blue Bank</h1>
+      </div>
+      <div class="login__message">Log in to get started</div>
+      <div class="top__login__feature">
+        <input
+          type="text"
+          class="username login__username"
+          placeholder="Username"
+        />
+        <input type="text" class="pin login__password" placeholder="pin" />
+        <button class="login__btn btn--blue">Submit</button>
+      </div>
+      <div class="users">
+        <p>username: Ben Bec // pin : 1111</p>
+        <p>username: Ros Bec // pin : 2222</p>
+        <p>username: ken Bec // pin : 3333</p>
+      </div>
+    </section>
+    <main class="app">
+      <section class="top__section">
+        <div class="top__message">Log in to get started</div>
+        <div class="top__logo__container">
+          <img class="logo__icon" src="icon.png" alt="profile pic" />
+          <h1 class="logo__text">Blue Bank</h1>
+        </div>
+        <div class="top__login__feature">
+          <input
+            type="text"
+            class="username input__username"
+            placeholder="Username"
+          />
+          <input
+            type="password"
+            class="pin input__password"
+            placeholder="PIN"
+          />
+          <button class="login__btn btn--blue">Submit</button>
+        </div>
+      </section>
+      <section class="app__top__section">
+        <div class="app__features">
+          <div class="feature transfer__money">
+            <h3>Transfer money</h3>
+            <div class="feature__form transfer__form">
+              <input
+                class="input__receiving__account"
+                type="text"
+                placeholder="Transfer To"
+              />
+              <input
+                class="input__transfer__amount"
+                type="number"
+                placeholder="Amount"
+              />
+              <button class="transfer__btn">Submit</button>
+            </div>
+          </div>
+          <div class="feature loan__money">
+            <h3>Loan money</h3>
+            <div class="feature__form">
+              <input class="input__loan" type="number" placeholder="Amount" />
+              <button class="loan__btn">Submit</button>
+            </div>
+          </div>
+          <div class="feature close__account">
+            <h3>Close account</h3>
+            <div class="feature__form">
+              <input
+                class="close__account__input"
+                type="text"
+                placeholder="Account"
+              />
+              <input
+                class="close__account__password"
+                type="text"
+                placeholder="password"
+              />
+              <button class="close__account__btn">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="balance">
+          <div class="total__balance">
+            <div class="total__balance__text">Current Balance</div>
+            <div class="total__balance__number">$100.00</div>
+          </div>
+          <div class="balance__summaries">
+            <div class="total__deposits">
+              <div class="balance__summaries__text">IN</div>
+              <div class="balance__summaries__number money__in">$101.00</div>
+            </div>
+            <div class="total__withdrawals">
+              <div class="balance__summaries__text">OUT</div>
+              <div class="balance__summaries__number money__out">-$102.00</div>
+            </div>
+            <div class="total__interests">
+              <div class="balance__summaries__text">INTEREST</div>
+              <div class="balance__summaries__number money__interest">
+                $103.00
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="extras">
+        <input
+          class="search__input"
+          type="text"
+          placeholder="🔍 Search Transacton"
+        />
+        <button class="sort__btn btn--blue">Sort</button>
+        <p class="timer">This session will end in 5:00</p>
+      </section>
+
+      <section class="transactions">
+        <div class="transaction__row deposit">
+          <div class="partner">Kent Bec</div>
+          <div class="amount">99.00</div>
+          <div class="date">17 July</div>
+        </div>
+        <div class="transaction__row withdrawal">
+          <div class="partner">Amazon</div>
+          <div class="amount">-50.00</div>
+          <div class="date">11 July</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
