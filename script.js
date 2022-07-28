@@ -38,7 +38,7 @@ const nowTime = new Date().toString();
 // ------------------------------ accounts
 
 const account1 = {
-  username: "bb",
+  username: "Ben Bec",
   pin: 1111,
   transactions: [147, 25, 36, 789, 35, 456, -56, -87],
   interestRate: 0.6,
@@ -54,7 +54,7 @@ const account1 = {
   ],
 };
 const account2 = {
-  username: "kk",
+  username: "Rosa Bec",
   pin: 2222,
   transactions: [985, -258, -753, 951, -25, 85, 123, -84],
   interestRate: 1,
