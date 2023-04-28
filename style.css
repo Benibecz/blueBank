@@ -1,0 +1,301 @@
+
+:root {
+      --bg-color: #f6f6f6;
+      --primary-color: #0078aa;
+      --success-color: #53BF9D;
+      --fail-color: #f94c66;
+      --neutral-color: #f2df3a;
+
+      --main-font: "Poppins", sans-serif;
+      --text-font-size: 16px;
+      --subheading-font-size: 18px;
+      --heading-font-size: 23px;
+}
+
+body {
+      background-color: var(--bg-color);
+      font-family: var(--main-font);
+      font-size: var(--text-font-size);
+      margin-bottom: 6rem;
+}
+body * {
+      padding: 0;
+      margin: 0;
+}
+#account header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2.5rem auto 4rem;
+}
+h3 {
+      font-weight: 500;
+}
+input {
+      padding: 0.75rem;
+      border-radius: 10px;
+      font-size: var(--text-font-size);
+      border: none;
+      outline: none;
+}
+.container {
+      max-width: 1140px;
+      margin: auto;
+}
+.error-message {
+      border: 1px solid var(--fail-color);
+      border-radius: 5px;
+      width: fit-content;
+      padding: 10px;
+      margin: 0 auto 25px;
+}
+#loggin .log-in-form {
+      text-align: center;
+      margin: 25vh auto 0;
+      max-width: 500px;
+}
+.heading {
+      font-size: 1.4rem;
+}
+.log-in-form > *,
+#loggin form > * {
+      margin-bottom: 2rem;
+}
+.logo-holder {
+      background-color: var(--primary-color);
+      width: 5rem;
+      height: 5rem;
+      margin: 0 auto 0.5rem;
+      border-radius: 50%;
+}
+.logo-holder img {
+      width: 100%;
+}
+
+/* #loggin label {
+      display: flex;
+      gap: 0.7rem;
+      justify-content: center;
+} */
+
+#loggin .log-in-form, 
+#loggin form {
+      display: flex;
+      flex-direction: column;
+}
+#loggin input {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+      font-size: var(--text-font-size);
+}
+#loggin .submit-btn {
+      border: 1px solid var(--primary-color);
+      margin: auto;
+}
+#loggin .submit-btn:hover {
+      background-color: var(--primary-color);
+}
+.btn.create-account {
+      border: 1px solid var(--neutral-color);
+      color: #222;
+}
+.btn.create-account:hover {
+      background-color: var(--neutral-color);
+}
+
+a.btn {
+      text-decoration: none;
+}
+.log-out.btn {
+      border: 1px solid var(--fail-color);
+      color: #222;
+}
+.log-out.btn:hover {
+      background-color: var(--fail-color);
+}
+.btn {
+      border-radius: 10px;
+      padding: 0.75rem;
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: var(--text-font-size);
+      cursor: pointer;
+      border: none;
+}
+
+/* --------------- >>>>> new-account */
+
+#new-account form {
+      width: fit-content;
+      margin: 25% auto 0;
+      border-radius: 10px;
+      padding: 30px;
+      background-color: #0078aa;
+}
+#new-account .form-group {
+      margin-bottom: 15px;
+      color: #fff;
+      margin: 0 auto 15px;
+}
+#new-account .form-group input {
+      margin-left: 15px;
+}
+#new-account .btn {
+      width: 100%;
+      background-color: inherit;
+      border: 1px solid #fff;
+      color: #fff;
+}
+#new-account .btn:hover {
+      background-color: #fff;
+      color: #0078aa;
+}
+
+
+
+/* --------------- >>>>> account(logged in) */
+
+.section-2columns {
+      display: flex;
+      margin-bottom: 3rem;
+      justify-content: space-evenly;
+}
+.app-features-holder {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding: 15px;
+}
+.app-features-holder.transfer {
+      background-color: var(--neutral-color);
+}
+.app-features-holder.loan {
+      background-color: var(--primary-color);
+}
+.app-features-holder.close-account {
+      background-color: var(--fail-color);
+}
+.app-features-holder h3 {
+      line-height: 2.5rem;
+}
+.app-features-holder .btn {
+      border: 1px solid #fff;
+      background-color: transparent;
+      transition: transfor 0.5s;
+} 
+.app-features-holder .btn:hover {
+      transform: scale(0.98);
+}
+.app-displays {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+}
+.current-balance {
+      font-size: 1.15rem;
+      font-weight: 500;
+}
+.current-balance .display-balance {
+      font-size: 5rem;
+      color: var(--success-color);
+      max-height: 570px;
+      margin-top: 25%;
+}
+.multiple-display-holder {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1.5rem;
+}
+.multiple-display-item.money-in {
+      color: var(--success-color);
+}
+.multiple-display-item.money-out {
+      color: var(--fail-color);
+}
+.multiple-display-item.money-interest {
+      color: var(--neutral-color);
+}
+
+.multiple-display-holder p {
+      font-size: 0.75rem;
+      color: #222;
+}
+.help-section {
+      margin-bottom: 1.75rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.help-section .search {
+      width: 50%;
+}
+.help-section .btn {
+      border: 1px solid var(--primary-color);
+      max-width: 100px;
+      width: 100%;
+      margin: 0 20px;
+
+}
+.help-section .btn:hover {
+      background-color: var(--primary-color);
+}
+.transaction-item {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+}
+.transaction-item.positive {
+      background-color: var(--success-color);
+}
+.transaction-item.negative {
+      background-color: var(--fail-color);
+}
+
+/* @media (orientation: landscape) {
+
+      #loggin .log-in-form {
+            margin: 15vh auto 0;
+      }
+
+} */
+
+
+@media screen and (max-width: 992px) {
+      label {
+            flex-direction: column;
+      }
+      .container {
+            max-width: 960px;
+      }
+      #loggin .log-in-form,
+      #new-account form {
+            margin: 15vh auto 0;
+      }
+}
+
+@media screen and (max-width: 720px) {
+      .section-2columns {
+            flex-direction: column;
+            row-gap: 2rem;
+      }
+      .current-balance .display-balance {
+            margin-top: 1rem;
+      }
+      #account header {
+            justify-content: space-evenly;
+            margin: 4rem 0 3rem;
+      }
+      #account .logo-holder {
+            display: none;
+      }
+      .app-features-holder {
+            margin: 0 auto 10px;
+      }
+}
+
+
+
